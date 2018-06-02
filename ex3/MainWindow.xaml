@@ -1,0 +1,33 @@
+﻿<Window x:Class="ex3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ex3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <DockPanel>
+        <Menu DockPanel.Dock="top">
+            <MenuItem Header="Add" FontSize="20">
+                <MenuItem Name="AddActorMenuItem" Header="Actor" Click="AddActorMenuItem_Click"/>
+                <MenuItem Name="AddActressMenuItem" Header="Actress" Click="AddActressMenuItem_Click"/>
+                <MenuItem Name="AddDirectorMenuItem" Header="Director" Click="AddDirectorMenuItem_Click" />
+                <MenuItem Name="AddMovieMenuItem" Header="Movie" Click="AddMovieMenuItem_Click"/>
+                <MenuItem Name="AddOscarMenuItem" Header="Oscar" Click="AddOscarMenuItem_Click"/>
+                <MenuItem Name="AddGoldenGlobeMenuItem" Header="Golden Globe" Click="AddGoldenGlobeMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Show" FontSize="20">
+                <MenuItem Name="ShowActorsMenuItem" Header="Actors"/>
+                <MenuItem Name="ShowActressesMenuItem" Header="Actresses"/>
+                <MenuItem Name="ShowMoviesMenuItem" Header="Movies"/>
+                <MenuItem Name="ShowOscarsMenuItem" Header="Oscars"/>
+                <MenuItem Name="ShowGoldenGlobesMenuItem" Header="Golden Globes"/>
+            </MenuItem>
+            <MenuItem Header="Connect" FontSize="20">
+                <MenuItem Name="ConnectMovieToActorMenuItem" Header="Movie to Actor"/>
+                <MenuItem Name="ConnectMovieToActressMenuItem" Header="Movie to Actress"/>
+                <MenuItem Name="ConnectMovieToDirectorMenuItem" Header="Movie to Director"/>
+            </MenuItem>
+        </Menu>
+    </DockPanel>
+</Window>
